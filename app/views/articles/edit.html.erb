@@ -1,12 +1,15 @@
 <% content_for :title, "Editing article" %>
 
-<h1>Editing article</h1>
+<div class="edit-header">
+<h1>Editar</h1>
+<div>
+  <button type="button" class="btn-secundary"> <%= link_to "Mostrar", @article %></button>
+  <button type="button" class="btn-secundary"> <%= link_to "Voltar", articles_path %></button>
+</div>
+</div>
 
 <%= render "form", article: @article %>
 
 <br>
 
-<div>
-  <%= link_to "Show this article", @article %> |
-  <%= link_to "Back to articles", articles_path %>
-</div>
+

@@ -16,6 +16,7 @@ class ArticlesTest < ApplicationSystemTestCase
 
     fill_in "Body", with: @article.body
     fill_in "Title", with: @article.title
+    fill_in "Title", with: @article.list
     click_on "Create Article"
 
     assert_text "Article was successfully created"
@@ -28,6 +29,7 @@ class ArticlesTest < ApplicationSystemTestCase
 
     fill_in "Body", with: @article.body
     fill_in "Title", with: @article.title
+    fill_in "Title", with: @article.list
     click_on "Update Article"
 
     assert_text "Article was successfully updated"

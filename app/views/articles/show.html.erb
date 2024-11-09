@@ -1,10 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
+<div style="float: right;margin:50px;">
+  <button type="button"  class="btn-secundary"> <%= link_to "Editar", edit_article_path(@article) %> </button>
+  <button type="button"  class="btn-secundary"> <%= link_to "Voltar", articles_path %></button>
+</div>
+
 <%= render @article %>
 
-<div>
-  <%= link_to "Edit this article", edit_article_path(@article) %> |
-  <%= link_to "Back to articles", articles_path %>
+<p><strong>Lista:</strong> <%= @article.list %></p>
 
-  <%= button_to "Destroy this article", @article, method: :delete %>
-</div>
+<%= button_to "Deletar", @article, method: :delete %>
+
+

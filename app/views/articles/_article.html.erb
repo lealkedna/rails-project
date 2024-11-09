@@ -1,12 +1,31 @@
-<div id="<%= dom_id article %>">
+<div class="card" id="<%= dom_id article %>">
   <p>
-    <strong>Title:</strong>
+    <strong>Destino:</strong>
     <%= article.title %>
   </p>
 
   <p>
-    <strong>Body:</strong>
+    <strong>Descrição:</strong>
     <%= article.body %>
   </p>
+
+   <%# <div>
+    <p>Roteiro de dispesas: </p>
+    <ul>
+      <li>Data de ida:</li>
+      <li>Data de volta:</li>
+      <li>Passagens:</li>
+      <li>Hospedagem:</li>
+      <li>Alimentação:</li>
+      <li>Lugares</li>
+      <li>Internet</li>
+      <li>Seguro Viagem</li>
+    </ul>
+   
+  </div> %>
+
+  
+
+    <button class="button" type="button"><%= link_to "Mostrar detalhes", article %> </button>
 
 </div>
